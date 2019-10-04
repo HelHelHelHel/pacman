@@ -31,7 +31,8 @@ body {
 .entity {
   position: absolute;
   width: 85px;
-  height: 85px; }
+  height: 85px;
+  left: 0; }
   .entity--pac {
     position: absolute;
     font-weight: bold;

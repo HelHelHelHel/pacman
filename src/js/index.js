@@ -1,9 +1,10 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const stageClick = document.querySelector('.container');
-  stageClick.addEventListener('click', () => {
-    const pacman = document.querySelector('#pacman');
-    if (pacman.style.backgroundPositionX === '100%') {
-      pacman.style.backgroundPositionX = '0%';
-    } else pacman.style.backgroundPositionX = '100%';
+  let xpos = 0;
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'ArrowRight') {
+      xpos += 85;
+      console.log(xpos);
+      document.getElementById('pacman').style.left = `${xpos}px`;
+    }
   });
 });
