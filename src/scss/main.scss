@@ -17,6 +17,7 @@ body {
   align-items: center;
   width: 100vw;
   height: 100vh;
+  background-color: rosybrown;
 }
 
 .stage {
@@ -24,6 +25,7 @@ body {
   height: 510px;
   background-image: url('/img/tile.png');
   position: relative;
+  overflow: hidden;
 }
 
 .entity {
@@ -31,6 +33,7 @@ body {
   width: 85px;
   height: 85px;
   left: 0;
+  bottom: 0;
 
   &--pac {
     position: absolute;
@@ -83,4 +86,52 @@ body {
   &-active-dark {
     background-image: url('/img/pacgirl-active-dark.png');
   }
+}
+
+.img-bomb {
+  position: absolute;
+  left: 25%;
+}
+
+.img-bomb2 {
+  position: absolute;
+  left: 75%;
+  bottom: 1%
+}
+
+.img-apple {
+  position: absolute;
+  left: 50%;
+}
+
+.img-apple2 {
+  position: absolute;
+  left: 90%;
+  bottom: 33%;
+}
+
+.img-tomb {
+  position: absolute;
+  bottom: 32%;
+  left: 75%;
+}
+
+.img-wall {
+  top: 50%;
+  position: relative;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  background-color: lightseagreen;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-family: Helvetica;
+  padding: 1rem;
+  background-color: pink;
+  border-radius: 5px;
+  border: 2px solid white;
 }
